@@ -1,0 +1,30 @@
+# Archivos compilados de Python y caché
+*.pyc
+__pycache__/
+
+# Base de datos SQLite (ajusta según tu configuración)
+db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Archivos de traducción compilados
+*.mo
+
+# Archivos temporales de editores
+*.swp
+*.swo
+
+# Ignorar archivos de migraciones compilados
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# Ignorar el entorno virtual (ajusta el nombre de la carpeta según corresponda)
+venv/
+env/
+ENV/
+.venv
+.env
+
+# Archivos de medios (ajusta según tu configuración)
+media/
