@@ -9,12 +9,13 @@ class Doctor(models.Model):
     email = models.EmailField()
     address = models.TextField()
     biography = models.TextField()
+    is_on_vacation = models.BooleanField(default=False)
 
 class Department(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
 
-class Doctor_Availability(models.Model):
+class DoctorAvailability(models.Model):
     doctor = models.ForeignKey(
         Doctor, related_name='availabilities', on_delete=models.CASCADE
     )
